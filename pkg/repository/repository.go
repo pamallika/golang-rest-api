@@ -6,7 +6,7 @@ type TodoList interface {
 }
 type TodoItem interface {
 }
-type Repository interface {
+type Repository struct {
 	Authorization
 	TodoList
 	TodoItem

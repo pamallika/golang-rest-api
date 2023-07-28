@@ -1,6 +1,8 @@
 package service
 
-import "github.com/pamallika/golang-rest-api/pkg/repository"
+import (
+	"github.com/pamallika/golang-rest-api/pkg/repository"
+)
 
 type Authorization interface {
 }
@@ -8,7 +10,7 @@ type TodoList interface {
 }
 type TodoItem interface {
 }
-type Service interface {
+type Service struct {
 	Authorization
 	TodoList
 	TodoItem
